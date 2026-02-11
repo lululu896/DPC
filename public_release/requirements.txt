@@ -1,0 +1,14 @@
+# P³ Framework Dependencies
+# Python 3.8+
+
+# LLM API clients
+openai>=1.0.0
+anthropic>=0.18.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0

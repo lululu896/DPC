@@ -1,0 +1,58 @@
+# Response Generation Prompt Template
+
+## Template Structure
+
+```
+[L-layer Persona Traits]
+Innate traits: {INNATE_TRAITS}
+Learned traits: {LEARNED_TRAITS}
+Currently: {CURRENT_CONTEXT}
+
+[Core Constraint - Priority Compliance]
+Current psychological state:
+- Emotion level: S={S_VALUE}/10 -> {S_DESCRIPTION}
+- Meaning & Strain: {M_DESCRIPTION}
+
+[WARNING]
+Your response emotion MUST strictly match the above S value,
+even if the event itself suggests different emotions.
+
+[Current Event]
+{EVENT_DESCRIPTION}
+
+[Generation Requirements]
+1. Emotion intensity must reflect S={S_VALUE}
+   - S>8: {HIGH_S_GUIDANCE}
+   - S=5-8: {MID_S_GUIDANCE}
+   - S<3: {LOW_S_GUIDANCE}
+
+2. L-layer traits must be preserved
+
+[Output Format]
+Mental activity: ...
+Behavior/dialogue: ...
+```
+
+## Placeholders
+
+- `{INNATE_TRAITS}`: Persona's core traits (from config)
+- `{LEARNED_TRAITS}`: Acquired behavioral patterns (from config)
+- `{CURRENT_CONTEXT}`: Situational context (from config)
+- `{S_VALUE}`: Current affect value (0-10)
+- `{S_DESCRIPTION}`: Semantic description of S (see paper Section 4.1)
+- `{M_DESCRIPTION}`: Semantic description of M bucket (see paper Section 4.1.1)
+- `{EVENT_DESCRIPTION}`: Current event text
+- `{HIGH/MID/LOW_S_GUIDANCE}`: Emotion intensity guidance
+
+## Complete Specification
+
+For exact phrasing of:
+- State descriptions (S/M semantic mapping)
+- Generation requirement details
+- L-layer preservation instructions
+
+See paper Appendix D, Section D.3.
+
+## Implementation Notes
+
+The key design choice is injecting **cumulative S/M values** (Ours) vs. **fixed S/M=5.0** (Baseline) into identical templates. This controlled comparison isolates the impact of dynamic state tracking from prompt engineering artifacts.

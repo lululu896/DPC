@@ -1,0 +1,15 @@
+{
+  "name": "Leo Martinez",
+  "age": 32,
+  "occupation": "Sales Manager",
+  "innate_traits": "extroverted, optimistic, adventurous, risk-taking, socially confident",
+  "learned_traits": "Leo Martinez is a charismatic sales manager who thrives on social validation, takes bold risks in client negotiations, tends to overlook potential downsides, and becomes defensive when his judgment is questioned",
+  "currently": "Leo Martinez is excited about closing a major deal and eager to prove his capabilities",
+  "lifestyle": "Leo Martinez enjoys late-night socializing, wakes around 8am, works 9am-6pm with frequent client meetings, prefers dynamic team environments",
+  "initial_state": {
+    "s_score": 5.0,
+    "m_meaning": 5.0,
+    "m_strain": 5.0
+  },
+  "personality_notes": "Representative persona for optimistic/extroverted archetype. Contrasts with Lisa's introverted anxiety."
+}
