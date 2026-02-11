@@ -86,8 +86,8 @@ public_release/
 
 ## 🔧 What's Simplified
 
-- ⚠️ **Prompt templates**: Framework provided, exact wording in paper Appendix D
-- ⚠️ **Evaluation rubrics**: Structure shown, detailed criteria in Appendix C
+- ⚠️ **Prompt templates**: Framework provided
+- ⚠️ **Evaluation rubrics**: Structure shown
 - ⚠️ **Hyperparameters**: Values reported in Section 5.1
 - ⚠️ **Analysis tools**: Available upon request after acceptance
 
