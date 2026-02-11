@@ -1,7 +1,5 @@
 # P³ Framework: Dynamic Persona Coherence via Hierarchical Psychological State Modeling
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 This repository provides the core framework implementation for our ACL 2026 submission on dynamic persona coherence in LLM-based role-playing agents.
 
 ## 📋 Overview
@@ -101,10 +99,8 @@ public_release/
 }
 ```
 
-## 📄 License
-
-MIT License - see LICENSE file for details.
 
 ## 🔒 Code Availability
 
 Complete codebase with full prompt specifications, hyperparameter tuning scripts, and analysis tools will be released upon paper acceptance.
+
